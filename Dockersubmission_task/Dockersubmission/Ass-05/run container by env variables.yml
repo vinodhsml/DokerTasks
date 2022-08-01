@@ -1,0 +1,2 @@
+
+docker run --env-file='d:/samples' -d -p 80:80 APIDocker:v1

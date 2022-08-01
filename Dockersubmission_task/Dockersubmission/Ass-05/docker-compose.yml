@@ -1,0 +1,14 @@
+
+version: '3'
+services:
+
+  Service1:
+    container_name: APIDocker:v1
+    hostname: APIDocker:v1
+    image: APIDocker:v1:v1
+    env_file: env_file_name
+    environment:
+        - env_var_name
+    ports:
+      - 83:80
+    restart: unless-stopped

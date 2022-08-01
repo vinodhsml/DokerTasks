@@ -1,0 +1,12 @@
+//build command
+docker build -t APIDocker:v1 .
+
+// To see the images 
+docker images
+
+//Run the container
+docker run -d -p 80:80 APIDocker:v1
+
+// Push images to docker (registered to docker hub)
+ docker login
+ docker push  APIDocker:v1

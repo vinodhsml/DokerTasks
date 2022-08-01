@@ -1,0 +1,8 @@
+//build command
+docker build -t APIDocker .
+
+// To see the images 
+docker images
+
+//Run the container
+docker run -d -p 80:80 APIDocker

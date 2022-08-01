@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: APIDocker:v1
+  name: APIDocker:v1
+  namespace: default
+spec:
+  ports:
+    - port: 83
+      protocol: TCP
+  selector:
+    run: APIDocker:v1
+  sessionAffinity: None
+  type: LoadBalancer
